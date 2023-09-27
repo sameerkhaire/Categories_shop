@@ -1,0 +1,22 @@
+﻿@model ModelLayer.DB.Category
+
+<h1>Edit Category</h1>
+
+<form method="Put" class="mt-5">
+    <div class="mb-3">
+        <label class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="categoryId" readonly />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">CategoryName</label>
+        <input type="text" class="form-control" asp-for="CategoryName"/>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">DisplayOrder</label>
+        <input type="text" class="form-control" asp-for="DisplayOrder"/>
+    </div>
+    <button type="submit" class="btn btn-primary">Edit Category</button>
+    <div class="w-75 btn-group" role="group">
+        <button class="btn btn-danger mx-2" asp-controller="Category" asp-action="DeleteCat"><i class="bi bi-trash-fill"></i>Delete</button>
+    </div>
+</form>

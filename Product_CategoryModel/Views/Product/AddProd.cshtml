@@ -1,0 +1,44 @@
+﻿@model ModelLayer.DB.Product
+<h1>Create Product</h1>
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <input type="text" class="form-control" asp-for="Title" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <input type="text" class="form-control" asp-for="Description" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">ISBN</label>
+        <input type="text" class="form-control" asp-for="ISBN" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Author</label>
+        <input type="text" class="form-control" asp-for="Author" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">ListPrice</label>
+        <input type="number" class="form-control" asp-for="ListPrice" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Price50</label>
+        <input type="number" class="form-control" asp-for="price50" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Price100</label>
+        <input type="number" class="form-control" asp-for="price100" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Category</label>
+        <select asp-for="category_Id" asp-items="ViewBag.datalistt" class="form-select border-0 shadow">
+            <option disabled selected>--Select Category--</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Image Url</label>
+        <input type="text" class="form-control" asp-for="ImageUrl" />
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Add Product</button>
+</form>

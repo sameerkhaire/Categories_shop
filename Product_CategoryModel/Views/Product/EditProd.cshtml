@@ -1,0 +1,41 @@
+﻿@model ModelLayer.DB.Product
+<h1>Edit Product</h1>
+
+<form method="post" class="mt-5">
+    <div class="mb-3">
+        <label class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="productId" readonly />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <input type="text" class="form-control" asp-for="Title" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <input type="text" class="form-control" asp-for="Description" />
+    </div>
+     <div class="mb-3">
+        <label class="form-label">ISBN</label>
+        <input type="text" class="form-control" asp-for="ISBN" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Author</label>
+        <input type="text" class="form-control" asp-for="Author" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">ListPrice</label>
+        <input type="text" class="form-control" asp-for="ListPrice" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Price50</label>
+        <input type="text" class="form-control" asp-for="price50" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Price100</label>
+        <input type="text" class="form-control" asp-for="price100" />
+    </div>
+    <button type="submit" class="btn btn-primary">Edit Product</button>
+    <div class="w-75 btn-group" role="group">
+        <button class="btn btn-danger mx-2" asp-controller="Product" asp-action="DeleteProd"><i class="bi bi-trash-fill"></i>Delete</button>
+    </div>
+</form>
